@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import lombok.Data;
 
@@ -22,7 +24,9 @@ import lombok.Data;
 public class Reserva {
 	
 	private String idRes;
+	@Temporal(TemporalType.DATE)
 	private Date fechaIngresoRes;
+	@Temporal(TemporalType.DATE)
 	private Date fechaSalidaRes;
 	private int cantidadPersonasRes;
 	private String descripcionRes;

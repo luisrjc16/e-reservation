@@ -27,4 +27,10 @@ public interface ClienteRepository extends JpaRepository<Cliente, String> {
 	 */
 	public Cliente findByIdentificacion(String identificacionCli);
 	
+	/**
+	 * Definicion del metodo para buscar los clientes por su nombre
+	 * @param nombreCli
+	 * @return
+	 */
+	public List<Cliente> findByNombreCli(String nombreCli);
 }

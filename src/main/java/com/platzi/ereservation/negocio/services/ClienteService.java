@@ -3,8 +3,11 @@
  */
 package com.platzi.ereservation.negocio.services;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> 34c6a2375e3f4793129bbd72d61d0303fd0c4d48
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,7 +19,11 @@ import com.platzi.ereservation.negocio.repository.ClienteRepository;
  *
  */
 @Service
+<<<<<<< HEAD
 @Transactional(readOnly = true)
+=======
+@Transactional(readOnly=true)
+>>>>>>> 34c6a2375e3f4793129bbd72d61d0303fd0c4d48
 public class ClienteService {
 	private final ClienteRepository clienteRepository;
 	
